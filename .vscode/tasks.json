@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "Assignments/Week 6/money-is-no-object",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: install - Assignments/Week 6/money-is-no-object",
+			"detail": "install dependencies from package"
+		}
+	]
+}
