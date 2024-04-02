@@ -22,7 +22,3 @@ console.log(b)
 
 // ... after line 6 executes?
 // 100
-
-
-
-hi
