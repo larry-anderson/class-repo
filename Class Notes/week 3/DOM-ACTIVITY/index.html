@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Activity</title>
+</head>
+<body>
+    <div id="a">
+        <div id="b">
+            <p>hello</p>
+        </div>
+        <button>Cancel</button>
+        <div id="c"></div>
+        
+        <button>Click!</button>
+        </div>
+    </div>
+    
+    <script>
+        const divA = document.getElementById('a')
+        console.log(divA)
+
+        divA.style.borderStyle = 'solid'
+        divA.style.borderWidth = '2px'
+        divA.style.borderColor = 'orange'
+
+        const divB = document.getElementById('b')
+        console.log(divB)
+
+        const divC = document.querySelector('#c')
+        console.log(divC)
+       
+        const button = document.querySelector('button')
+        console.log(button)  
+        
+        const divs = document.querySelectorAll('div')
+        console.log(divs)
+
+        // divs.forEach(function(div){
+        // div.style.borderWidth = '2px'
+        // div.style.borderStyle = 'solid'
+        // div.style.borderColor = 'blue'})
+
+        const divtags = document.getElementsByTagName('div')
+        console.log(divtags)
+
+        for (var i = 0; i < divtags.length; i++) {
+            divtags[i].style.borderWidth = '2px'
+            divtags[i].style.borderStyle = 'solid'
+            divtags[i].style.borderColor = 'brown'
+            
+        }
+
+    </script>
+    
+</body>
+</html>

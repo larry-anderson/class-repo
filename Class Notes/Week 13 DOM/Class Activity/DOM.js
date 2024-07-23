@@ -1,6 +1,6 @@
 // Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
 //document.querySelector("tagname")
-const firstParagraph = document.querySelector('p');
+
 console.log('First Paragraph:', firstParagraph.textContent);
 
 

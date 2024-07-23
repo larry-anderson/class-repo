@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Example 1: Click Event Listener
+    Let's start with a simple example where we add a click event listener to a button. -->
+    <button id="myButton">Click Me!</button>
+
+    <!-- Example 2:Let's add a mouseover event listener to change the color of a div when the mouse hovers over it. -->
+    <div id="myDiv"></div>
+
+    <!-- Example 3: Keydown Event Listener
+    Let's add a keydown event listener to detect when a specific key is pressed. -->
+    <input type="text" id="myInput" placeholder="Type something...">
+</body>
+
+
+
+
+
+
+
+<script>
+    //EXAMPLE 1
+    //  In this example, when the button is clicked, an alert box will appear with the message "Button was clicked!". 
+
+    // Select the button element
+    const button = document.getElementById('myButton');
+
+    // Add a click event listener to the button
+    button.addEventListener('click', () => {
+        alert('Button was clicked!');
+    });
+
+
+
+
+    // *************************************************************
+
+
+    //EXAMPLE 2
+    // mouseover event listener
+    // Select the div element
+    const div = document.getElementById('myDiv');
+
+    // Add a mouseover event listener to the div
+    div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = 'lightcoral';
+    });
+
+    // Add a mouseout event listener to reset the color
+    div.addEventListener('mouseout', () => {
+        div.style.backgroundColor = 'lightblue';
+    });
+
+
+
+
+    // *************************************************************
+
+        //EXAMPLE 3
+    // Select the input element
+    const input = document.getElementById('myInput');
+
+    // Add a keydown event listener to the input
+    input.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            alert('Enter key was pressed!');
+        }
+    });
+
+
+
+</script>
+
+</html>
